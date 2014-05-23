@@ -8,13 +8,17 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/hello
+~MSle0~/plugin
 
 # Command Line History (newest to oldest):
+:wq
 :q
+:vsplit
+:set clipboard=unnamedplus
+:e .vimrc
+:help hidden
 :w
 :tabnew ~/Dropbox/CPP/groupon.cpp
-:wq
 :colorscheme delek
 :e ~/Dropbox/PYTHON/candies.py
 :colorscheme murphy
@@ -23,16 +27,14 @@
 :set rnu
 :set number
 :tabnew .viminfo
-:e .vimrc
 :gT
 :gt
 :prev
 :next
-:tab 0
-:tab 1
-:tabs
 
 # Search String History (newest to oldest):
+?/plugin
+?/file
 ?/hello
 ?/hel
 
@@ -44,8 +46,14 @@
 
 # Registers:
 "0	LINE	0
-	PLugin '
-"1	LINE	0
+	
+""1	LINE	0
+	
+"2	LINE	0
+	
+"3	LINE	0
+	
+"4	LINE	0
 	colorscheme murphy 
 	
 	" set the runtime path to include Vundle and initialize
@@ -58,46 +66,49 @@
 	
 	call vundle#end()            " required
 	filetype plugin indent on    " required
-"2	CHAR	0
+"5	CHAR	0
 	
 	"
-"3	LINE	0
+"6	LINE	0
 	filetype off                  " required
-"4	CHAR	0
-	o
-"5	CHAR	0
-	C
-"6	CHAR	0
-	h
 "7	CHAR	0
-	a
+	o
 "8	CHAR	0
-	n
+	C
 "9	CHAR	0
-	d
-""-	CHAR	0
+	h
+"-	CHAR	0
 	murphy 
 
 # File marks:
-'0  28  0  ~/Dropbox/CPP/groupon.cpp
-'1  7  50  ~/.vimrc
-'2  10  16  ~/.vimrc
-'3  1  0  ~/Dropbox/PYTHON/candies.py
-'4  1  0  ~/.vimrc
-'5  22  17  ~/.vimrc
-'6  22  0  ~/.vimrc
-'7  6  0  ~/[Vundle] Installer
-'8  22  33  ~/.vimrc
-'9  27  0  ~/.zshrc
+'0  17  0  ~/.vimrc
+'1  21  38  ~/.vimrc
+'2  27  0  ~/.vimrc
+'3  23  0  ~/.vimrc
+'4  15  59  ~/.vimrc
+'5  26  0  ~/.vimrc
+'6  28  0  ~/Dropbox/CPP/groupon.cpp
+'7  7  50  ~/.vimrc
+'8  10  16  ~/.vimrc
+'9  1  0  ~/Dropbox/PYTHON/candies.py
 
 # Jumplist (newest first):
--'  28  0  ~/Dropbox/CPP/groupon.cpp
+-'  17  0  ~/.vimrc
+-'  9  0  ~/.vimrc
+-'  28  27  ~/.vimrc
+-'  29  0  ~/.vimrc
 -'  1  0  ~/.vimrc
+-'  36  0  ~/.vimrc
+-'  21  38  ~/.vimrc
+-'  27  0  ~/.vimrc
+-'  23  0  ~/.vimrc
+-'  26  0  ~/.vimrc
+-'  15  59  ~/.vimrc
+-'  28  0  ~/Dropbox/CPP/groupon.cpp
 -'  7  50  ~/.vimrc
 -'  10  16  ~/.vimrc
--'  9  0  ~/.vimrc
 -'  1  0  ~/Dropbox/PYTHON/candies.py
--'  22  17  ~/.vimrc
+-'  37  17  ~/.vimrc
 -'  6  0  ~/[Vundle] Installer
 -'  27  0  ~/.zshrc
 -'  1  0  ~/.zshrc
@@ -174,35 +185,41 @@
 -'  1  0  ~/Documents/Vimlearning/ch
 -'  5  6  ~/Documents/Vimlearning/dapping.txt
 -'  3  0  ~/Documents/Vimlearning/dapping.txt
--'  1  0  ~/Documents/Vimlearning/ch
--'  5  6  ~/Documents/Vimlearning/dapping.txt
--'  3  0  ~/Documents/Vimlearning/dapping.txt
--'  2  0  ~/Documents/Vimlearning/dapping.txt
--'  1  10  ~/Documents/Vimlearning/hello.txt
--'  1  0  ~/.viminfo
--'  1  0  ~/Documents/Vimlearning/chandran
--'  2  80  ~/Documents/Vimlearning/chandran
--'  1  0  ~/Documents/Vimlearning/ch
--'  5  6  ~/Documents/Vimlearning/dapping.txt
--'  27  0  ~/.zshrc
--'  1  0  ~/Dropbox/PYTHON/candies.py
--'  1  0  ~/Dropbox/PYTHON/candies.py
 
 # History of marks within files (newest to oldest):
 
 > ~/.vimrc
-	"	1	0
-	^	7	51
-	.	7	50
+	"	17	0
+	^	17	0
+	.	16	60
 	+	7	16
 	+	5	18
 	+	8	10
-	+	22	41
-	+	22	11
-	+	22	0
-	+	22	0
+	+	37	41
+	+	37	11
+	+	37	0
+	+	37	0
 	+	10	16
 	+	7	50
+	+	14	56
+	+	19	16
+	+	15	59
+	+	2	0
+	+	26	0
+	+	26	0
+	+	26	0
+	+	26	0
+	+	26	0
+	+	26	0
+	+	26	0
+	+	22	43
+	+	25	21
+	+	22	0
+	+	21	38
+	+	16	60
+
+> /usr/share/vim/vim73/doc/options.txt
+	"	3681	9
 
 > ~/Dropbox/CPP/groupon.cpp
 	"	28	0

@@ -9,6 +9,21 @@ set number
 syntax on
 colorscheme delek
 
+set ignorecase " for ignoring case in search patterns
+set smartcase " for overriding the prev setting when cap is used
+set incsearch " show immediately so far searched pattern
+set timeoutlen=200 " waiting time to complete a seq of chars
+set clipboard=unnamedplus " enable copy/paste from system cb
+
+" Custom mappings
+inoremap jj <Esc>
+
+" Motivation to stay out of insert mode
+inoremap <Left>  <NOP>
+inoremap <Right> <NOP>
+inoremap <Up>    <NOP>
+inoremap <Down>  <NOP>
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
