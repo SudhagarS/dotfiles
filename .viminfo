@@ -12,12 +12,26 @@
 
 # Command Line History (newest to oldest):
 :wq
+:tabnew Dropbox/PYTHON/candies.py
+:set transparency=5
 :q
+:e .zshrc
+:e .vimrc
+:w
+:imap <c-s> <Esc><c-s>
+:imap <c-s> <Esc>:w<CR>a
+:nmap <c-s> :w<CR>
+:imap <c-s> <Esc><c-s>i
+:set laststatus=2
+:nmap <CR><CR> o<ESC>
+:PluginInstall
+:syntax enable
+:e ~/Dropbox/CPP/prime.cpp
+:set cursorline
+:set cul
 :vsplit
 :set clipboard=unnamedplus
-:e .vimrc
 :help hidden
-:w
 :tabnew ~/Dropbox/CPP/groupon.cpp
 :colorscheme delek
 :e ~/Dropbox/PYTHON/candies.py
@@ -29,8 +43,6 @@
 :tabnew .viminfo
 :gT
 :gt
-:prev
-:next
 
 # Search String History (newest to oldest):
 ?/plugin
@@ -45,75 +57,93 @@
 # Input Line History (newest to oldest):
 
 # Registers:
-"0	LINE	0
-	
+"0	CHAR	0
+	:
 ""1	LINE	0
 	
 "2	LINE	0
-	
+	" Style the tabbar
+	:hi TabLineFill ctermfg=Yellow ctermbg=Blue
+	:hi TabLine ctermfg=Blue ctermbg=Blue
+	:hi TabLineSel ctermfg=Red ctermbg=Yellow
 "3	LINE	0
 	
 "4	LINE	0
-	colorscheme murphy 
-	
-	" set the runtime path to include Vundle and initialize
-	set rtp+=~/.vim/bundle/Vundle.vim
-	call vundle#begin()
-	
-	Plugin 'gmarik/Vundle.vim'
-	Plugin 'scrooloose/nerdtree'
-	Plugin 'jeffkreeftmeijer/vim-numbertoggle'
-	
-	call vundle#end()            " required
-	filetype plugin indent on    " required
-"5	CHAR	0
-	
-	"
+	" Ctrl q to save and quit
+"5	LINE	0
+	nmap <c-q> :wq<CR>
 "6	LINE	0
-	filetype off                  " required
-"7	CHAR	0
-	o
-"8	CHAR	0
-	C
-"9	CHAR	0
-	h
+	imap <c-q> <Esc>:wq<CR>
+"7	LINE	0
+	imap <c-q> <Esc>:wq<CR>
+"8	LINE	0
+	
+"9	LINE	0
+	
 "-	CHAR	0
-	murphy 
+	e
 
 # File marks:
-'0  17  0  ~/.vimrc
-'1  21  38  ~/.vimrc
-'2  27  0  ~/.vimrc
-'3  23  0  ~/.vimrc
-'4  15  59  ~/.vimrc
-'5  26  0  ~/.vimrc
-'6  28  0  ~/Dropbox/CPP/groupon.cpp
-'7  7  50  ~/.vimrc
-'8  10  16  ~/.vimrc
-'9  1  0  ~/Dropbox/PYTHON/candies.py
+'0  6  0  ~/.vimrc
+'1  29  0  ~/.vimrc
+'2  2  0  ~/Dropbox/PYTHON/candies.py
+'3  29  51  ~/.vimrc
+'4  29  0  ~/.vimrc
+'5  29  17  ~/.vimrc
+'6  59  0  ~/.vimrc
+'7  79  0  ~/.vimrc
+'8  53  14  ~/.vimrc
+'9  57  0  ~/.vimrc
 
 # Jumplist (newest first):
--'  17  0  ~/.vimrc
--'  9  0  ~/.vimrc
--'  28  27  ~/.vimrc
--'  29  0  ~/.vimrc
--'  1  0  ~/.vimrc
--'  36  0  ~/.vimrc
--'  21  38  ~/.vimrc
--'  27  0  ~/.vimrc
--'  23  0  ~/.vimrc
--'  26  0  ~/.vimrc
--'  15  59  ~/.vimrc
--'  28  0  ~/Dropbox/CPP/groupon.cpp
--'  7  50  ~/.vimrc
--'  10  16  ~/.vimrc
--'  1  0  ~/Dropbox/PYTHON/candies.py
--'  37  17  ~/.vimrc
--'  6  0  ~/[Vundle] Installer
--'  27  0  ~/.zshrc
--'  1  0  ~/.zshrc
--'  8  0  ~/.vimrc
 -'  6  0  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  29  0  ~/.vimrc
+-'  2  0  ~/Dropbox/PYTHON/candies.py
+-'  59  0  ~/.vimrc
+-'  79  0  ~/.vimrc
+-'  53  0  ~/.vimrc
+-'  54  0  ~/.vimrc
+-'  57  0  ~/.vimrc
+-'  1  0  ~/.zshrc
+-'  16  25  ~/.zshrc
+-'  1  0  ~/.zshr
+-'  18  0  ~/.zshrc
+-'  2  0  ~/.vimrc
+-'  56  0  ~/.vimrc
+-'  20  25  ~/Dropbox/PYTHON/pizzachef.py
+-'  62  7  ~/.vimrc
+-'  63  0  ~/.vimrc
+-'  38  0  ~/.vimrc
+-'  72  22  ~/.vimrc
+-'  31  35  ~/.vimrc
+-'  5  0  ~/.vimrc
+-'  32  0  ~/.vimrc
+-'  34  0  ~/.vimrc
+-'  71  0  ~/.vimrc
+-'  1  0  ~/Dropbox/LeRoyalTours/main.py
+-'  73  0  ~/.vimrc
+-'  16  0  ~/Dropbox/PYTHON/candies.py
+-'  7  0  ~/[Vundle] Installer
+-'  76  0  ~/.vimrc
+-'  44  0  ~/.vimrc
+-'  27  44  ~/.vimrc
+-'  25  34  ~/.vimrc
+-'  19  0  ~/.vimrc
+-'  10  0  ~/.vimrc
+-'  60  27  ~/.vimrc
+-'  47  38  ~/.vimrc
+-'  49  0  ~/.vimrc
+-'  16  59  ~/.vimrc
+-'  28  0  ~/Dropbox/CPP/groupon.cpp
+-'  8  50  ~/.vimrc
+-'  11  16  ~/.vimrc
+-'  1  0  ~/Dropbox/PYTHON/candies.py
+-'  80  17  ~/.vimrc
+-'  17  0  ~/[Vundle] Installer
+-'  28  0  ~/.zshrc
+-'  9  0  ~/.vimrc
+-'  7  0  ~/.vimrc
 -'  1  0  ~/.viminfo
 -'  1  0  ~/Documents/Vimlearning/chandran
 -'  18  0  ~/Dropbox/PYTHON/candies.py
@@ -123,7 +153,7 @@
 -'  3  0  ~/Documents/Vimlearning/dapping.txt
 -'  2  0  ~/Documents/Vimlearning/dapping.txt
 -'  1  10  ~/Documents/Vimlearning/hello.txt
--'  16  0  ~/.zshrc
+-'  19  0  ~/.zshrc
 -'  5  135  ~/.profile
 -'  1  0  ~/.profile
 -'  2  26  ~/.profile
@@ -159,64 +189,235 @@
 -'  5  6  ~/Documents/Vimlearning/dapping.txt
 -'  3  0  ~/Documents/Vimlearning/dapping.txt
 -'  2  0  ~/Documents/Vimlearning/dapping.txt
--'  1  10  ~/Documents/Vimlearning/hello.txt
--'  5  135  ~/.profile
--'  1  0  ~/.profile
--'  2  26  ~/.profile
--'  1  0  ~/.bash
--'  1  0  ~/Documents/Vimlearning/ch
--'  5  6  ~/Documents/Vimlearning/dapping.txt
--'  3  0  ~/Documents/Vimlearning/dapping.txt
--'  2  0  ~/Documents/Vimlearning/dapping.txt
--'  1  10  ~/Documents/Vimlearning/hello.txt
--'  5  135  ~/.profile
--'  1  0  ~/.profile
--'  2  26  ~/.profile
--'  1  0  ~/.bash
--'  1  0  ~/Documents/Vimlearning/ch
--'  5  6  ~/Documents/Vimlearning/dapping.txt
--'  3  0  ~/Documents/Vimlearning/dapping.txt
--'  2  0  ~/Documents/Vimlearning/dapping.txt
--'  1  10  ~/Documents/Vimlearning/hello.txt
--'  5  135  ~/.profile
--'  1  0  ~/.profile
--'  2  26  ~/.profile
--'  1  0  ~/.bash
--'  1  0  ~/Documents/Vimlearning/ch
--'  5  6  ~/Documents/Vimlearning/dapping.txt
--'  3  0  ~/Documents/Vimlearning/dapping.txt
+-'  83  0  ~/.vimrc
+-'  74  0  ~/.vimrc
+-'  48  0  ~/.vimrc
+-'  2  0  ~/Dropbox/PYTHON/candies.py
 
 # History of marks within files (newest to oldest):
 
 > ~/.vimrc
-	"	17	0
-	^	17	0
-	.	16	60
-	+	7	16
-	+	5	18
-	+	8	10
-	+	37	41
-	+	37	11
+	"	6	0
+	.	29	0
+	+	48	43
+	+	51	21
+	+	48	0
+	+	47	38
+	+	17	60
+	+	22	23
+	+	19	0
+	+	18	0
+	+	19	10
+	+	20	10
+	+	24	0
+	+	32	31
+	+	32	58
+	+	32	13
+	+	32	0
+	+	24	31
+	+	22	24
+	+	25	34
+	+	32	27
+	+	26	0
+	+	26	0
+	+	28	0
+	+	27	44
+	+	32	19
+	+	32	0
+	+	32	0
+	+	32	0
+	+	32	0
+	+	59	15
+	+	57	0
+	+	59	0
+	+	76	22
+	+	78	0
+	+	72	0
+	+	64	31
+	+	64	31
+	+	65	0
+	+	64	0
+	+	63	0
+	+	63	0
+	+	70	0
+	+	69	4
+	+	42	0
+	+	41	0
+	+	40	0
+	+	39	0
+	+	38	0
 	+	37	0
-	+	37	0
-	+	10	16
-	+	7	50
-	+	14	56
-	+	19	16
-	+	15	59
+	+	36	0
+	+	35	0
+	+	34	0
+	+	33	0
+	+	32	0
+	+	57	21
+	+	33	0
+	+	30	0
+	+	57	15
+	+	43	0
+	+	57	51
+	+	31	35
+	+	73	1
+	+	72	0
+	+	59	22
+	+	59	0
+	+	73	1
+	+	63	0
+	+	61	0
+	+	62	8
+	+	53	0
+	+	56	0
+	+	57	0
+	+	59	0
+	+	54	0
+	+	1	0
 	+	2	0
-	+	26	0
-	+	26	0
-	+	26	0
-	+	26	0
-	+	26	0
-	+	26	0
-	+	26	0
-	+	22	43
-	+	25	21
-	+	22	0
-	+	21	38
-	+	16	60
+	+	59	22
+	+	55	13
+	+	59	25
+	+	55	7
+	+	59	0
+	+	59	0
+	+	59	0
+	+	59	0
+	+	59	0
+	+	59	0
+	+	53	14
+	+	59	0
+	+	59	0
+	+	59	0
+	+	59	0
+	+	58	0
+	+	54	0
+	+	52	0
+	+	59	0
+	+	59	0
+	+	29	41
+	+	29	0
+	+	29	18
+	+	29	42
+	+	29	0
+	a	73	0
+
+> ~/Dropbox/PYTHON/candies.py
+	"	2	0
+	^	15	20
+	.	15	21
+	+	15	21
+
+> ~/.zshrc
+	"	1	0
+	^	1	0
+	.	1	0
+	+	15	28
+	+	17	36
+	+	19	0
+	+	16	26
+	+	1	0
+
+> ~/.zshr
+	"	1	0
+
+> ~/ControlP
+	"	4	0
+	.	2	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	2	0
+
+> ~/Dropbox/PYTHON/pizzachef.py
+	"	20	25
+	.	20	25
+	+	20	25
+
+> ~/Dropbox/PYTHON/codechef/chefconvo.py
+	"	1	0
+
+> ~/Dropbox/LeRoyalTours/main.py
+	"	1	0
+
+> ~/[Vundle] Installer
+	"	7	0
+	.	1	0
+	+	17	0
+	+	12	0
+	+	7	0
+	+	1	0
+
+> ~/Dropbox/CPP/prime.cpp
+	"	1	0
 
 > /usr/share/vim/vim73/doc/options.txt
 	"	3681	9
@@ -226,21 +427,6 @@
 	^	28	0
 	.	28	0
 	+	28	0
-
-> ~/Dropbox/PYTHON/candies.py
-	"	1	0
-
-> ~/[Vundle] Installer
-	"	6	0
-	.	1	0
-	+	6	0
-	+	1	0
-
-> ~/.zshrc
-	"	27	0
-	^	16	0
-	.	15	28
-	+	15	28
 
 > ~/.viminfo
 	"	1	0
