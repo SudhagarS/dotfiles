@@ -11,12 +11,50 @@
 ~MSle0~/plugin
 
 # Command Line History (newest to oldest):
+:q!
+:!
+:q
 :wq
+:Wq
+:colorscheme wombat256mod
+:colorscheme babymate256
+:colorscheme af
+:colorscheme adaryn
+:colorscheme Monokai-chris
+:colorscheme DevC++
+:colorscheme BlackSea
+:e dcpunit3.py
+:colorscheme adam
+:e .zshrc
+:tabnew mixingmilk.cpp
+:e ~/.vimrc
+:colorscheme MountainDew
+:e .vimrc
+:PluginClean
+:e vimrc
+:colorscheme desert
+:colorscheme Tomorrow-Night
+:colorscheme Tomorrow-Night-Eighties
+:colorscheme 3dglasses
+:colorscheme 256-grayvim
+:colorscheme Monokai
+:colorscheme ChocolateLiquor
+:color wombat256mod
+:color 3dglasses
+:color 256-grayvim
+:colorscheme molokai
+::q
+:colorscheme base16-monokai
+:color base16-monokai
+:set t_Co=256
+:color base16-default
+:color desert
+:color base16-atelierdune
+:color base16-3024
+:color base16-atelierforest
+:color wombat
 :tabnew Dropbox/PYTHON/candies.py
 :set transparency=5
-:q
-:e .zshrc
-:e .vimrc
 :w
 :imap <c-s> <Esc><c-s>
 :imap <c-s> <Esc>:w<CR>a
@@ -53,97 +91,136 @@
 # Expression History (newest to oldest):
 
 # Input Line History (newest to oldest):
+@Y
 
 # Input Line History (newest to oldest):
 
 # Registers:
 "0	CHAR	0
-	:
+	Tomorrow-Night
 ""1	LINE	0
 	
 "2	LINE	0
+	                #print "[info] op stack empty"
+"3	LINE	0
+	Plugin 'Lokaltog/powerline'
+"4	LINE	0
+	
+"5	LINE	0
+	colorscheme desert 
+"6	LINE	0
+	Plugin 'chriskempson/base16-vim'
+"7	LINE	0
+	Plugin 'vim-scripts/Wombat'
+"8	LINE	0
+	
+"9	LINE	0
 	" Style the tabbar
 	:hi TabLineFill ctermfg=Yellow ctermbg=Blue
 	:hi TabLine ctermfg=Blue ctermbg=Blue
 	:hi TabLineSel ctermfg=Red ctermbg=Yellow
-"3	LINE	0
-	
-"4	LINE	0
-	" Ctrl q to save and quit
-"5	LINE	0
-	nmap <c-q> :wq<CR>
-"6	LINE	0
-	imap <c-q> <Esc>:wq<CR>
-"7	LINE	0
-	imap <c-q> <Esc>:wq<CR>
-"8	LINE	0
-	
-"9	LINE	0
-	
 "-	CHAR	0
-	e
+	wombat
 
 # File marks:
-'0  6  0  ~/.vimrc
-'1  29  0  ~/.vimrc
-'2  2  0  ~/Dropbox/PYTHON/candies.py
-'3  29  51  ~/.vimrc
-'4  29  0  ~/.vimrc
-'5  29  17  ~/.vimrc
-'6  59  0  ~/.vimrc
-'7  79  0  ~/.vimrc
-'8  53  14  ~/.vimrc
-'9  57  0  ~/.vimrc
+'0  86  0  /private/etc/master.passwd
+'1  14  1  ~/Dropbox/CPP/usaco/milk.java
+'2  48  0  ~/Dropbox/PYTHON/dcpunit3.py
+'3  54  36  ~/Dropbox/PYTHON/eval_exp.py
+'4  1  0  ~/.vimrc
+'5  68  0  ~/.vimrc
+'6  1  0  ~/Dropbox/CPP/usaco/mixingmilk.cpp
+'7  11  0  ~/.vimrc
+'8  1  0  ~/Dropbox/CPP/usaco/milkoptimise.cpp
+'9  12  0  ~/Dropbox/CPP/usaco/mixingmilk.cpp
 
 # Jumplist (newest first):
--'  6  0  ~/.vimrc
+-'  86  0  /private/etc/master.passwd
+-'  1  0  /private/etc/master.passwd
+-'  14  1  ~/Dropbox/CPP/usaco/milk.java
+-'  16  2  ~/Dropbox/CPP/usaco/milk.java
+-'  12  0  ~/Dropbox/CPP/usaco/milk.java
+-'  1  0  ~/Dropbox/CPP/usaco/milk.java
+-'  48  0  ~/Dropbox/PYTHON/dcpunit3.py
+-'  1  0  ~/Dropbox/PYTHON/eval_exp.py
+-'  54  36  ~/Dropbox/PYTHON/eval_exp.py
 -'  1  0  ~/.vimrc
--'  29  0  ~/.vimrc
+-'  68  0  ~/.vimrc
+-'  1  0  ~/Dropbox/CPP/usaco/mixingmilk.cpp
+-'  11  0  ~/.vimrc
+-'  1  0  ~/Dropbox/CPP/usaco/milkoptimise.cpp
+-'  12  0  ~/Dropbox/CPP/usaco/mixingmilk.cpp
+-'  13  0  ~/Dropbox/CPP/usaco/mixingmilk.cpp
+-'  10  0  ~/Dropbox/CPP/usaco/mixingmilk.cpp
+-'  33  1  ~/Dropbox/CPP/usaco/mixingmilk.cpp
+-'  1  17  ~/.gvimrc
+-'  12  23  ~/.vimrc
+-'  1  6  ~/.curlrc
+-'  9  0  ~/[Vundle] Installer
+-'  86  0  ~/.vimrc
+-'  87  0  ~/.vimrc
+-'  17  0  ~/[Vundle] Installer
+-'  14  0  ~/.vimrc
+-'  1  0  ~/.vim/.vimr
+-'  19  0  ~/.vimrc
+-'  1  0  ~/vimrc
+-'  13  25  ~/.vimrc
+-'  1  0  ~/Dropbox/PYTHON/candies.py
+-'  89  0  ~/.vimrc
+-'  2  0  ~/.vimrc
+-'  3  0  ~/.vimrc
+-'  24  0  ~/[Vundle] Installer
+-'  84  0  ~/.vimrc
+-'  24  0  ~/.vimrc
+-'  32  0  ~/[Vundle] Installer
+-'  39  0  ~/[Vundle] Installer
+-'  46  0  ~/[Vundle] Installer
+-'  53  0  ~/[Vundle] Installer
+-'  65  0  ~/.vimrc
+-'  1  0  ~/.vmrc
+-'  5  0  ~/.vimrc
+-'  30  0  ~/.vimrc
 -'  2  0  ~/Dropbox/PYTHON/candies.py
--'  59  0  ~/.vimrc
--'  79  0  ~/.vimrc
--'  53  0  ~/.vimrc
+-'  66  0  ~/.vimrc
 -'  54  0  ~/.vimrc
--'  57  0  ~/.vimrc
+-'  55  0  ~/.vimrc
+-'  58  0  ~/.vimrc
 -'  1  0  ~/.zshrc
 -'  16  25  ~/.zshrc
 -'  1  0  ~/.zshr
 -'  18  0  ~/.zshrc
--'  2  0  ~/.vimrc
--'  56  0  ~/.vimrc
+-'  57  0  ~/.vimrc
 -'  20  25  ~/Dropbox/PYTHON/pizzachef.py
--'  62  7  ~/.vimrc
--'  63  0  ~/.vimrc
--'  38  0  ~/.vimrc
--'  72  22  ~/.vimrc
--'  31  35  ~/.vimrc
--'  5  0  ~/.vimrc
--'  32  0  ~/.vimrc
--'  34  0  ~/.vimrc
--'  71  0  ~/.vimrc
+-'  69  7  ~/.vimrc
+-'  70  0  ~/.vimrc
+-'  39  0  ~/.vimrc
+-'  79  22  ~/.vimrc
+-'  32  35  ~/.vimrc
+-'  4  0  ~/.vimrc
+-'  33  0  ~/.vimrc
+-'  35  0  ~/.vimrc
+-'  78  0  ~/.vimrc
 -'  1  0  ~/Dropbox/LeRoyalTours/main.py
--'  73  0  ~/.vimrc
+-'  80  0  ~/.vimrc
 -'  16  0  ~/Dropbox/PYTHON/candies.py
--'  7  0  ~/[Vundle] Installer
--'  76  0  ~/.vimrc
--'  44  0  ~/.vimrc
--'  27  44  ~/.vimrc
--'  25  34  ~/.vimrc
--'  19  0  ~/.vimrc
+-'  59  0  ~/[Vundle] Installer
+-'  83  0  ~/.vimrc
+-'  45  0  ~/.vimrc
+-'  28  44  ~/.vimrc
+-'  26  34  ~/.vimrc
+-'  20  0  ~/.vimrc
 -'  10  0  ~/.vimrc
--'  60  27  ~/.vimrc
--'  47  38  ~/.vimrc
--'  49  0  ~/.vimrc
--'  16  59  ~/.vimrc
+-'  67  27  ~/.vimrc
+-'  48  38  ~/.vimrc
+-'  50  0  ~/.vimrc
+-'  17  59  ~/.vimrc
 -'  28  0  ~/Dropbox/CPP/groupon.cpp
--'  8  50  ~/.vimrc
--'  11  16  ~/.vimrc
--'  1  0  ~/Dropbox/PYTHON/candies.py
--'  80  17  ~/.vimrc
--'  17  0  ~/[Vundle] Installer
+-'  7  50  ~/.vimrc
+-'  90  17  ~/.vimrc
+-'  69  0  ~/[Vundle] Installer
 -'  28  0  ~/.zshrc
--'  9  0  ~/.vimrc
--'  7  0  ~/.vimrc
+-'  8  0  ~/.vimrc
+-'  6  0  ~/.vimrc
 -'  1  0  ~/.viminfo
 -'  1  0  ~/Documents/Vimlearning/chandran
 -'  18  0  ~/Dropbox/PYTHON/candies.py
@@ -158,89 +235,60 @@
 -'  1  0  ~/.profile
 -'  2  26  ~/.profile
 -'  1  0  ~/.bash
--'  1  0  ~/Documents/Vimlearning/ch
--'  5  6  ~/Documents/Vimlearning/dapping.txt
--'  3  0  ~/Documents/Vimlearning/dapping.txt
--'  2  0  ~/Documents/Vimlearning/dapping.txt
--'  1  10  ~/Documents/Vimlearning/hello.txt
--'  5  135  ~/.profile
--'  1  0  ~/.profile
--'  2  26  ~/.profile
--'  1  0  ~/.bash
--'  1  0  ~/Documents/Vimlearning/ch
--'  5  6  ~/Documents/Vimlearning/dapping.txt
--'  3  0  ~/Documents/Vimlearning/dapping.txt
--'  2  0  ~/Documents/Vimlearning/dapping.txt
--'  1  10  ~/Documents/Vimlearning/hello.txt
--'  5  135  ~/.profile
--'  1  0  ~/.profile
--'  2  26  ~/.profile
--'  1  0  ~/.bash
--'  1  0  ~/Documents/Vimlearning/ch
--'  5  6  ~/Documents/Vimlearning/dapping.txt
--'  3  0  ~/Documents/Vimlearning/dapping.txt
--'  2  0  ~/Documents/Vimlearning/dapping.txt
--'  1  10  ~/Documents/Vimlearning/hello.txt
--'  5  135  ~/.profile
--'  1  0  ~/.profile
--'  2  26  ~/.profile
--'  1  0  ~/.bash
--'  1  0  ~/Documents/Vimlearning/ch
--'  5  6  ~/Documents/Vimlearning/dapping.txt
--'  3  0  ~/Documents/Vimlearning/dapping.txt
--'  2  0  ~/Documents/Vimlearning/dapping.txt
--'  83  0  ~/.vimrc
--'  74  0  ~/.vimrc
--'  48  0  ~/.vimrc
--'  2  0  ~/Dropbox/PYTHON/candies.py
 
 # History of marks within files (newest to oldest):
 
+> /private/etc/master.passwd
+	"	86	0
+
+> ~/Dropbox/CPP/usaco/milk.java
+	"	14	1
+	.	15	0
+	+	7	0
+	+	12	2
+	+	15	0
+
+> ~/Dropbox/PYTHON/eval_exp.py
+	"	1	0
+	^	54	37
+	.	54	36
+	+	24	23
+	+	55	0
+	+	54	36
+
+> ~/Dropbox/PYTHON/dcpunit3.py
+	"	48	0
+
 > ~/.vimrc
-	"	6	0
-	.	29	0
-	+	48	43
-	+	51	21
-	+	48	0
-	+	47	38
-	+	17	60
-	+	22	23
-	+	19	0
-	+	18	0
-	+	19	10
-	+	20	10
-	+	24	0
-	+	32	31
-	+	32	58
-	+	32	13
-	+	32	0
-	+	24	31
-	+	22	24
-	+	25	34
-	+	32	27
-	+	26	0
-	+	26	0
-	+	28	0
-	+	27	44
-	+	32	19
-	+	32	0
-	+	32	0
-	+	32	0
-	+	32	0
-	+	59	15
-	+	57	0
-	+	59	0
-	+	76	22
-	+	78	0
+	"	1	0
+	^	9	24
+	.	9	23
+	+	26	34
+	+	33	27
+	+	27	0
+	+	27	0
+	+	29	0
+	+	28	44
+	+	33	19
+	+	33	0
+	+	33	0
+	+	33	0
+	+	33	0
+	+	66	15
+	+	58	0
+	+	66	0
+	+	83	22
+	+	88	0
+	+	79	0
+	+	71	31
+	+	71	31
 	+	72	0
-	+	64	31
-	+	64	31
-	+	65	0
-	+	64	0
-	+	63	0
-	+	63	0
+	+	71	0
 	+	70	0
-	+	69	4
+	+	70	0
+	+	77	0
+	+	76	4
+	+	43	0
 	+	42	0
 	+	41	0
 	+	40	0
@@ -251,61 +299,71 @@
 	+	35	0
 	+	34	0
 	+	33	0
-	+	32	0
-	+	57	21
-	+	33	0
-	+	30	0
-	+	57	15
-	+	43	0
-	+	57	51
-	+	31	35
-	+	73	1
-	+	72	0
-	+	59	22
-	+	59	0
-	+	73	1
-	+	63	0
-	+	61	0
-	+	62	8
-	+	53	0
-	+	56	0
+	+	58	21
+	+	34	0
+	+	31	0
+	+	58	15
+	+	44	0
+	+	58	51
+	+	32	35
+	+	80	1
+	+	79	0
+	+	66	22
+	+	66	0
+	+	80	1
+	+	70	0
+	+	68	0
+	+	69	8
+	+	54	0
 	+	57	0
-	+	59	0
-	+	54	0
-	+	1	0
-	+	2	0
-	+	59	22
-	+	55	13
-	+	59	25
-	+	55	7
-	+	59	0
-	+	59	0
-	+	59	0
-	+	59	0
-	+	59	0
-	+	59	0
-	+	53	14
-	+	59	0
-	+	59	0
-	+	59	0
-	+	59	0
 	+	58	0
-	+	54	0
-	+	52	0
+	+	66	0
+	+	55	0
+	+	1	0
+	+	1	0
+	+	66	22
+	+	56	13
+	+	66	25
+	+	56	7
+	+	66	0
+	+	66	0
+	+	66	0
+	+	66	0
+	+	66	0
+	+	66	0
+	+	54	14
+	+	66	0
+	+	66	0
+	+	66	0
+	+	66	0
 	+	59	0
-	+	59	0
-	+	29	41
-	+	29	0
-	+	29	18
-	+	29	42
-	+	29	0
-	a	73	0
-
-> ~/Dropbox/PYTHON/candies.py
-	"	2	0
-	^	15	20
-	.	15	21
-	+	15	21
+	+	55	0
+	+	53	0
+	+	66	0
+	+	66	0
+	+	30	41
+	+	30	0
+	+	30	18
+	+	30	42
+	+	30	0
+	+	64	16
+	+	84	26
+	+	84	1
+	+	84	30
+	+	84	0
+	+	2	0
+	+	2	0
+	+	13	12
+	+	11	11
+	+	13	0
+	+	12	23
+	+	87	26
+	+	1	0
+	+	87	0
+	+	86	0
+	+	12	24
+	+	9	23
+	a	80	0
 
 > ~/.zshrc
 	"	1	0
@@ -317,11 +375,63 @@
 	+	16	26
 	+	1	0
 
-> ~/.zshr
+> ~/Dropbox/CPP/usaco/mixingmilk.cpp
+	"	1	0
+	.	13	0
+	+	24	0
+	+	32	0
+	+	33	18
+	+	34	0
+	+	36	0
+	+	41	3
+	+	14	11
+	+	9	0
+	+	11	0
+	+	13	0
+
+> ~/Dropbox/CPP/usaco/milkoptimise.cpp
+	"	1	0
+
+> ~/.gvimrc
+	"	1	17
+	^	1	18
+	.	1	17
+	+	1	17
+
+> ~/.curlrc
+	"	1	6
+	^	1	7
+	.	1	6
+	+	1	6
+
+> ~/[Vundle] Installer
+	"	9	0
+	.	1	0
+	+	69	0
+	+	64	0
+	+	59	0
+	+	53	0
+	+	46	0
+	+	39	0
+	+	32	0
+	+	24	0
+	+	17	0
+	+	9	0
+	+	1	0
+
+> ~/[Vundle] clean
+	"	5	0
+	.	1	0
+	+	1	0
+
+> ~/.vim/.vimr
+	"	1	0
+
+> ~/vimrc
 	"	1	0
 
 > ~/ControlP
-	"	4	0
+	"	1	0
 	.	2	0
 	+	1	0
 	+	1	0
@@ -395,7 +505,46 @@
 	+	1	0
 	+	1	0
 	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
 	+	2	0
+
+> ~/Dropbox/PYTHON/candies.py
+	"	1	0
+	^	15	20
+	.	15	21
+	+	15	21
+
+> ~/.vmrc
+	"	1	0
+
+> ~/.zshr
+	"	1	0
 
 > ~/Dropbox/PYTHON/pizzachef.py
 	"	20	25
@@ -407,14 +556,6 @@
 
 > ~/Dropbox/LeRoyalTours/main.py
 	"	1	0
-
-> ~/[Vundle] Installer
-	"	7	0
-	.	1	0
-	+	17	0
-	+	12	0
-	+	7	0
-	+	1	0
 
 > ~/Dropbox/CPP/prime.cpp
 	"	1	0

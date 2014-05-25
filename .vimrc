@@ -1,4 +1,3 @@
-
 set nocompatible              " be iMproved, required
 
 filetype on
@@ -7,8 +6,10 @@ filetype plugin on
 
 set showtabline=2 " show the tab line, 0 to disable
 set number
+" To enable color scheme
 syntax on
-colorscheme delek
+set t_Co=256
+colorscheme wombat256mod
 
 set ignorecase " for ignoring case in search patterns
 set smartcase " for overriding the prev setting when cap is used
@@ -56,6 +57,12 @@ nmap <CR><CR> o<ESC> " insert new line on two enter
 nmap <c-s> :w<CR>
 imap <c-s> <Esc>:w<CR>a
 
+" Movements between windows
+map <c-j> <c-w>j
+map <c-h> <c-w>h
+map <c-k> <c-w>k
+map <c-l> <c-w>l
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 
@@ -74,6 +81,9 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jeffkreeftmeijer/vim-numbertoggle'
 Plugin 'kien/ctrlp.vim'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'bling/vim-airline'
+
 call vundle#end()            " required
 
 filetype plugin indent on    " required
