@@ -15,6 +15,7 @@ alias proxyoff="export http_proxy='';export https_proxy=''"
 alias ccat="pygmentize -g"
 # To enable ctrl S mapping
 alias vim="stty stop '' -ixoff; vim"
+alias vim73="stty stop '' -ixoff;vim73"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -60,6 +61,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
+export PATH="/usr/local/bin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
