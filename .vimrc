@@ -148,3 +148,14 @@ let g:auto_save = 1
 " overloaded methods when using autocomplete
 set completeopt-=preview
 
+" Convert tabs in a file to spaces
+set list
+set et|retab
+set listchars=eol:$,tab:>-,trail:.,extends:>,precedes:<
+
+" To enable folding
+set foldmarker={,}
+set foldmethod=marker
+set nofoldenable
+set foldlevel=1
+

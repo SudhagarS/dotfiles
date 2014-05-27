@@ -8,34 +8,65 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/plugin
+~MSle0~/^M
 
 # Last Substitute Search Pattern:
 ~MSle0&indentLine_color_term
 
 # Command Line History (newest to oldest):
-:q
 :wq
+:set fileformat=unix
+:q
+:set ff?
+:ProjectOpen
+:q!
+:set foldlevel=1
+:colorscheme Tomorrow-Night-Eighties
+:colorscheme autumn
+:NERDTreeToggle
+:let NERDTreeMapOpenInTab='<ENTER>'
+:JavaSearch getJson*
+:JavaSearch getJson
+:JavaSearch
+:JavaSearch -t method
+:JavaFormat
+:Validate
+:w
+:JavaSearchContext
+:so ~/.vimrc
+:e ~/.vimrc
+:set foldmethod=marker
+:set foldmarker={,}
+:set foldermarker1={,}
+:set nofoldenable
+:set foldnestmax=10
+:set foldmethod=indent
+:JavaSearchContext -a
+:set et|retab
+:set et|rehab
+:cd ~/Notebook/Vault/
+:JavaClasspath
+:set list
+:set liston
+:set syntax=whitespace
+:set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
+:set nolist
+::set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
+:PingEclim
 :ShutdownEclim
 :e src/org/test/Test.java
 :JavaDocSearch
 :ProjectBuild
 :SyntasticToggleMode
-:so ~/.vimrc
 :so ~/.vimr
 :PluginInstall
 :tabnew ~/.vimrc
-:ProjectOpen
-:e ~/.vimrc
 :AutoSaveToggle
 :Java
 :ProjectRefresh
 :Javac
 :ProjectSettings
-:PingEclim
-:JavaClasspath
 :Java %
-:NERDTreeToggle
 :ProjectInfo
 :NewSrcEntry src/java
 :Nsource
@@ -49,11 +80,9 @@
 :cd Dropbox/CPP/usaco/
 :make milk.java
 :set makeprg=javac
-:w
 :h syntastic
 :SyntasticInfo
 :help easymotion.txt
-:q!
 :let g:indentLine_color_term
 :shutdowneclim
 :Q
@@ -78,7 +107,6 @@
 :e vimrc
 :colorscheme desert
 :colorscheme Tomorrow-Night
-:colorscheme Tomorrow-Night-Eighties
 :colorscheme 3dglasses
 :colorscheme 256-grayvim
 :colorscheme Monokai
@@ -125,6 +153,7 @@
 :gt
 
 # Search String History (newest to oldest):
+?/^M
 ?/plugin
 ?/let
 ?/file
@@ -139,79 +168,69 @@
 # Input Line History (newest to oldest):
 
 # Registers:
-"0	LINE	0
-	        System.exit();
-""1	LINE	0
-	        String a = "Hi";
+""0	CHAR	0
+	"
+"1	LINE	0
+	
 "2	LINE	0
-	        System.exit();
+	<!-- $Id$ -->
 "3	LINE	0
-	        ;
+	
 "4	LINE	0
-	        System.out.append();
+	
 "5	LINE	0
 	
-	class Pair1 
-	{
-	    public static void main(String args[])
-	    {
-	
-	    }
-	}
-"6	LINE	0
-	class Pair1 implements Comparab
+"6	CHAR	0
+	        //NOTE: Do not include isOrgAdmin check in this method as it can be invoked even for personal users
+	        //who do not have any organization associated with them and thus, will not be OrgAdmin.
+	        //Also, Org creation or new registration is not yet allowed from API calls, check and restrict if it is so.
+	        if (request.getContextPath().equals("/api")) {
+	            APIUtil.sendFailureMessage(request, response, I18N.getI18nMsg("vault.filter.VaultIAMFilter.You_have_not_yet_registered_to_Zoho_Vault"));
+	        } else {
+	            RequestDispatcher view = request.getRequestDispatcher(CREATE_ORG_URL);
+	            view.forward(request, response);
+	        }
 "7	LINE	0
-	Plugin 'vim-scripts/AutoComplPop'
+	        return APIUtil.getCategory(categoryId);
 "8	LINE	0
-	
-	let g:acp_behaviorJavaEclimLength = 1
-	function MeetsForJavaEclim(context)
-	      return g:acp_behaviorJavaEclimLength >= 0 &&
-	              \ a:context =~ '\k\.\k\{' . g:acp_behaviorJavaEclimLength . ',}$'
-	endfunction
-	let g:acp_behavior = {
-	      \ 'java': [{
-	        \ 'command': "\<c-x>\<c-u>",
-	        \ 'completefunc' : 'eclim#java#complete#CodeComplete',
-	        \ 'meets'        : 'MeetsForJavaEclim',
-	      \ }]
-	    \ }
-	
-	
+	        String a = "Hi";
 "9	LINE	0
-	" To link AutoComplPop with eclim
-	
-	let g:acp_behaviorJavaEclimLength = 3
-	function MeetsForJavaEclim(context)
-		  return g:acp_behaviorJavaEclimLength >= 0 &&
-		          \ a:context =~ '\k\.\k\{' . g:acp_behaviorJavaEclimLength . ',}$'
-	  endfunction
-	  let g:acp_behavior = {
-	      \ 'java': [{
-	        \ 'command': "\<c-x>\<c-u>",
-	        \ 'completefunc' : 'eclim#java#complete#CodeComplete',
-	        \ 'meets'        : 'MeetsForJavaEclim',
-	      \ }]
-	    \ }
-	
+	        System.exit();
 "-	CHAR	0
-	L
+	"
 
 # File marks:
-'0  150  0  ~/.vimrc
-'1  7  20  ~/Documents/Vimlearning/eclimtestproj/src/org/test/Test.java
-'2  15  0  ~/Documents/Vimlearning/eclimtestproj/[Vundle] Installer
-'3  11  10  ~/Documents/Vimlearning/eclimtestproj/src/org/test/Test.java
-'4  145  18  ~/.vimrc
-'5  1  0  ~/Documents/Vimlearning/eclimtestproj/.vimrc
-'6  41  0  ~/Documents/Vimlearning/eclimtestproj/[Vundle] Installer
-'7  54  0  ~/Documents/Vimlearning/eclimtestproj/[Vundle] Installer
-'8  119  33  ~/.vimrc
-'9  1  4  ~/Documents/Vimlearning/eclimtestproj/src/org/test/Test.java
+'0  43  48  ~/Dropbox/PYTHON/NBClient/Client.py
+'1  1  8  ~/Dropbox/PYTHON/NBClient/Client.py
+'2  37  8  ~/Documents/ec_workspace/ZohoNotebook/webcontent/WEB-INF/conf/database_params.conf
+'3  40  0  ~/Documents/ec_workspace/Sample/source/com/zoho/notebook/persistence/PersistenceHandler.java
+'4  239  3  ~/Notebook/Vault/zoho_vault/source/com/zoho/vault/filter/VaultIAMFilter.java
+'5  155  0  ~/.vimrc
+'6  152  7  ~/.vimrc
+'7  15  0  ~/Documents/ec_workspace/Sample/source/com/zoho/notebook/util/DBConstants.java
+'8  150  0  ~/.vimrc
+'9  7  20  ~/Documents/Vimlearning/eclimtestproj/src/org/test/Test.java
 
 # Jumplist (newest first):
--'  150  0  ~/.vimrc
+-'  43  48  ~/Dropbox/PYTHON/NBClient/Client.py
+-'  1  0  ~/Dropbox/PYTHON/NBClient/Client.py
+-'  37  8  ~/Documents/ec_workspace/ZohoNotebook/webcontent/WEB-INF/conf/database_params.conf
+-'  1  0  ~/Documents/ec_workspace/ZohoNotebook/webcontent/WEB-INF/conf/database_params.conf
+-'  40  0  ~/Documents/ec_workspace/Sample/source/com/zoho/notebook/persistence/PersistenceHandler.java
+-'  1  0  ~/Documents/ec_workspace/Sample/source/com/zoho/notebook/resource/Category.java
+-'  1  0  ~/Documents/ec_workspace/Sample/source/com/zoho/notebook/resource/MyApplication.java
+-'  1  0  ~/Documents/ec_workspace/Sample/source/com/zoho/notebook/persistence/PersistenceHandler.java
+-'  21  12  ~/Documents/ec_workspace/Sample/source/com/zoho/notebook/util/APIUtil.java
+-'  60  0  ~/Documents/ec_workspace/Sample/source/com/zoho/notebook/util/APIUtil.java
+-'  1  0  ~/Documents/ec_workspace/Sample/source/com/zoho/notebook/util/JsonUtil.java
+-'  239  3  ~/Notebook/Vault/zoho_vault/source/com/zoho/vault/filter/VaultIAMFilter.java
+-'  236  0  ~/Notebook/Vault/zoho_vault/source/com/zoho/vault/filter/VaultIAMFilter.java
+-'  47  1  ~/Notebook/Vault/zoho_vault/source/com/zoho/vault/filter/VaultIAMFilter.java
 -'  1  0  ~/.vimrc
+-'  155  0  ~/.vimrc
+-'  152  7  ~/.vimrc
+-'  15  0  ~/Documents/ec_workspace/Sample/source/com/zoho/notebook/util/DBConstants.java
+-'  150  0  ~/.vimrc
 -'  7  20  ~/Documents/Vimlearning/eclimtestproj/src/org/test/Test.java
 -'  1  0  ~/Documents/Vimlearning/eclimtestproj/src/org/test/Test.java
 -'  15  0  ~/Documents/Vimlearning/eclimtestproj/[Vundle] Installer
@@ -291,35 +310,461 @@
 -'  1  0  ~/.pro
 -'  102  0  ~/[Vundle] Installer
 -'  1  0  ~/Dropbox/CPP/usaco/gift1.out
--'  18  0  ~/NERD_tree_1
--'  31  2  ~/NERD_tree_1
--'  1  0  ~/NERD_tree_1
--'  34  2  /Applications/eclipse/eclimd
--'  1  0  /Applications/eclipse/eclimd
--'  4  0  ~/.profile
--'  8  0  ~/.profile
--'  124  9  ~/.vimrc
--'  86  0  /private/etc/master.passwd
--'  1  0  /private/etc/master.passwd
--'  17  1  ~/Dropbox/CPP/usaco/milk.java
--'  19  2  ~/Dropbox/CPP/usaco/milk.java
--'  15  0  ~/Dropbox/CPP/usaco/milk.java
--'  48  0  ~/Dropbox/PYTHON/dcpunit3.py
--'  1  0  ~/Dropbox/PYTHON/eval_exp.py
--'  54  36  ~/Dropbox/PYTHON/eval_exp.py
--'  94  0  ~/.vimrc
 
 # History of marks within files (newest to oldest):
 
+> ~/Documents/ec_workspace/ZohoNotebook/ControlP
+	"	2	0
+	.	2	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	2	0
+
+> ~/Documents/ec_workspace/ZohoNotebook/source/com/zoho/notebook/util/APIUtil.java
+	"	1	6
+	^	1	7
+	.	1	6
+	+	43	71
+	+	44	74
+	+	1	6
+
+> ~/Documents/ec_workspace/ZohoNotebook/source/com/zoho/notebook/resource/Category.java
+	"	23	28
+	^	23	29
+	.	23	25
+	+	1	6
+	+	22	88
+	+	24	88
+	+	19	82
+	+	15	88
+	+	20	101
+	+	22	33
+	+	23	34
+	+	24	25
+	+	22	25
+	+	23	25
+
+> ~/Documents/ec_workspace/ZohoNotebook/source/com/zoho/notebook/model/Category.java
+	"	1	6
+	^	1	7
+	.	1	6
+	+	1	6
+
+> ~/Documents/ec_workspace/ZohoNotebook/webcontent/WEB-INF/conf/Notebook/service.xml
+	"	1	0
+
+> ~/Documents/ec_workspace/ZohoNotebook/webcontent/WEB-INF/security-post-jsontemplates.xml
+	"	2	12
+	^	2	13
+	.	2	12
+	+	2	12
+
+> ~/Documents/ec_workspace/ZohoNotebook/source/com/zoho/notebook/util/ServiceImpl.java
+	"	18	1
+	^	1	7
+	.	1	6
+	+	1	6
+
+> ~/Documents/ec_workspace/ZohoNotebook/source/com/zoho/notebook/util/Constants.java
+	"	6	6
+	^	6	7
+	.	6	6
+	+	1	6
+	+	6	6
+
+> ~/Documents/ec_workspace/ZohoNotebook/webcontent/WEB-INF/security-rest-api-post.xml
+	"	107	12
+	^	107	13
+	.	107	12
+	+	107	12
+
+> ~/Documents/ec_workspace/ZohoNotebook/source/com/zoho/notebook/util/DBConstants.java
+	"	1	6
+	^	1	7
+	.	1	6
+	+	7	9
+	+	9	9
+	+	10	9
+	+	11	9
+	+	7	78
+	+	9	65
+	+	10	69
+	+	11	75
+	+	10	75
+	+	9	75
+	+	7	76
+	+	1	6
+
+> ~/Documents/ec_workspace/ZohoNotebook/source/com/zoho/notebook/util/APIConstants.java
+	"	29	0
+	^	29	83
+	.	29	82
+	+	1	6
+	+	8	6
+	+	9	6
+	+	10	1
+	+	13	0
+	+	13	0
+	+	12	6
+	+	13	6
+	+	15	0
+	+	14	6
+	+	15	6
+	+	16	6
+	+	17	6
+	+	18	6
+	+	19	6
+	+	20	6
+	+	21	6
+	+	22	6
+	+	23	6
+	+	24	6
+	+	25	6
+	+	26	6
+	+	28	6
+	+	29	6
+	+	8	83
+	+	9	82
+	+	10	82
+	+	12	82
+	+	13	82
+	+	14	82
+	+	15	82
+	+	16	82
+	+	17	82
+	+	18	82
+	+	19	82
+	+	20	82
+	+	21	82
+	+	23	0
+	+	23	0
+	+	23	0
+	+	23	0
+	+	23	0
+	+	23	0
+	+	23	0
+	+	22	83
+	+	23	82
+	+	24	86
+	+	25	82
+	+	26	82
+	+	27	0
+	+	28	82
+	+	29	82
+
+> ~/Documents/ec_workspace/ZohoNotebook/webcontent/WEB-INF/security-rest-api-delete.xml
+	"	84	0
+	^	84	0
+	.	84	0
+	+	83	12
+	+	84	0
+
+> ~/Documents/ec_workspace/ZohoNotebook/webcontent/WEB-INF/security-regexes.xml
+	"	13	0
+	^	13	0
+	.	12	13
+	+	12	13
+
+> ~/Documents/ec_workspace/ZohoNotebook/webcontent/WEB-INF/conf/Notebook/data-dictionary.xml
+	"	209	0
+	^	209	0
+	.	208	13
+	+	208	13
+
+> ~/Documents/ec_workspace/ZohoNotebook/webcontent/WEB-INF/security-rest-api-get.xml
+	"	71	0
+	^	71	0
+	.	70	13
+	+	70	13
+
+> ~/Documents/ec_workspace/ZohoNotebook/source/com/zoho/notebook/persistence/PersistenceHandler.java
+	"	44	0
+	^	44	1
+	.	26	88
+	+	1	7
+	+	22	80
+	+	26	88
+
+> ~/Documents/ec_workspace/ZohoNotebook/webcontent/WEB-INF/security-rest-api-put.xml
+	"	74	0
+	^	74	0
+	.	74	0
+	+	74	0
+
+> ~/Documents/ec_workspace/ZohoNotebook/source/com/zoho/notebook/resource/MyApplication.java
+	"	10	38
+	^	10	39
+	.	10	38
+	+	1	6
+	+	10	38
+
+> ~/Documents/ec_workspace/ZohoNotebook/source/com/zoho/notebook/util/JsonUtil.java
+	"	1	5
+	^	1	6
+	.	1	5
+	+	1	5
+
+> ~/Documents/ec_workspace/ZohoNotebook/source/com/zoho/notebook/util/UtilityBeanImpl.java
+	"	10	0
+	^	10	0
+	.	10	0
+	+	1	6
+	+	10	0
+
+> ~/Documents/ec_workspace/ZohoNotebook/source/com/zoho/notebook/util/CategoryUtil.java
+	"	1	5
+	^	1	6
+	.	1	5
+	+	1	5
+
+> ~/Documents/ec_workspace/ZohoNotebook/webcontent/WEB-INF/web.xml
+	"	2	12
+	^	2	13
+	.	2	13
+	+	1	0
+	+	1	0
+	+	1	0
+	+	2	13
+
+> ~/Dropbox/PYTHON/NBClient/Client.py
+	"	43	48
+	^	43	49
+	.	43	48
+	+	23	48
+	+	43	48
+	+	23	49
+	+	43	49
+	+	23	48
+	+	43	48
+
+> ~/Documents/ec_workspace/ZohoNotebook/webcontent/WEB-INF/conf/database_params.conf
+	"	37	8
+
+> ~/Documents/ec_workspace/Sample/ControlP
+	"	1	0
+	.	2	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	2	0
+
+> ~/Documents/ec_workspace/Sample/source/com/zoho/notebook/util/JsonUtil.java
+	"	1	0
+
+> ~/Documents/ec_workspace/Sample/source/com/zoho/notebook/util/ServiceImpl.java
+	"	13	1
+	.	11	0
+	+	36	0
+	+	11	0
+
+> ~/Documents/ec_workspace/Sample/source/com/zoho/notebook/util/APIUtil.java
+	"	21	12
+	^	6	4
+	.	1	0
+	+	6	0
+	+	1	0
+
+> ~/Documents/ec_workspace/Sample/source/com/zoho/notebook/util/CategoryUtil.java
+	"	65	0
+
+> ~/Documents/ec_workspace/Sample/NERD_tree_1
+	"	12	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> ~/Documents/ec_workspace/Sample/source/com/zoho/notebook/persistence/PersistenceHandler.java
+	"	40	0
+
+> ~/Documents/ec_workspace/Sample/source/com/zoho/notebook/resource/MyApplication.java
+	"	1	0
+
+> ~/Documents/ec_workspace/Sample/source/com/zoho/notebook/resource/Category.java
+	"	20	6
+	^	20	7
+	.	20	6
+	+	21	0
+	+	29	0
+	+	28	46
+	+	22	0
+	+	20	6
+
+> ~/Documents/ec_workspace/Sample/webcontent/META-INF/MANIFEST.MF
+	"	1	0
+
 > ~/.vimrc
-	"	150	0
-	^	150	0
-	.	149	24
-	+	92	0
-	+	92	0
-	+	92	0
-	+	92	0
-	+	92	0
+	"	161	0
+	^	161	0
+	.	160	15
 	+	92	0
 	+	78	14
 	+	92	0
@@ -357,16 +802,16 @@
 	+	122	1
 	+	1	0
 	+	5	0
-	+	151	0
+	+	162	0
 	+	57	0
 	+	59	13
 	+	63	13
 	+	58	33
-	+	151	0
-	+	151	0
-	+	151	0
-	+	151	0
-	+	151	0
+	+	162	0
+	+	162	0
+	+	162	0
+	+	162	0
+	+	162	0
 	+	126	0
 	+	73	0
 	+	74	0
@@ -415,7 +860,65 @@
 	+	145	18
 	+	120	27
 	+	149	24
+	+	153	11
+	+	151	33
+	+	154	33
+	+	152	7
+	+	160	15
 	a	109	0
+
+> ~/Notebook/Vault/ControlP
+	"	2	0
+	.	2	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	2	0
+
+> ~/Notebook/Vault/zoho_vault/source/com/zoho/vault/filter/VaultIAMFilter.java
+	"	239	3
+	^	236	4
+	.	236	0
+	+	1	0
+	+	65	0
+	+	92	0
+	+	235	134
+	+	236	0
+
+> ~/Documents/ec_workspace/Sample/webcontent/WEB-INF/lib/json.jar
+	"	23	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/ec_workspace/Sample/source/com/zoho/notebook/util/DBConstants.java
+	"	15	0
+	^	15	1
+	.	15	1
+	+	5	0
+	+	4	0
+	+	15	1
+
+> ~/.zshrc
+	"	63	78
+	^	63	79
+	.	63	78
+	+	15	28
+	+	17	36
+	+	20	0
+	+	16	26
+	+	1	0
+	+	18	39
+	+	64	33
+	+	63	78
+
+> ~/.xshr
+	"	1	0
+
+> /usr/local/mysql-5.5.37-osx10.6-x86_64/bin/.zshrc
+	"	1	0
 
 > ~/Documents/Vimlearning/eclimtestproj/src/org/test/Test.java
 	"	7	20
@@ -572,18 +1075,6 @@
 	+	5	0
 	+	3	0
 	+	1	0
-
-> ~/.zshrc
-	"	64	0
-	^	64	34
-	.	64	33
-	+	15	28
-	+	17	36
-	+	20	0
-	+	16	26
-	+	1	0
-	+	18	39
-	+	64	33
 
 > ~/test.java
 	"	5	28
